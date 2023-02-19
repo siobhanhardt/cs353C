@@ -14,10 +14,10 @@ We intend to create a Web Card Game which
 ## Modules
 npm install echarts
 npm install date-fns
-npm install @fortawesome/react-fontawesome
+npm install @fortawesome/js-fontawesome
 npm install @fonpmrtawesome/free-solid-svg-icons
-npm install @fortawesome/react-fontawesome
-npm install react-select
-npm install react-bootstrap
+npm install @fortawesome/js-fontawesome
+npm install node.js-select
+npm install node.js-bootstrap
 
 ## What are the things that our application actually do?
