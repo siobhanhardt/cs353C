@@ -5,7 +5,7 @@
 1. npm install
 2. npm start
 3. http://localhost:6500
-4. Right click on the browser page to open the Inspect sidebar and turn on mobile mode, select responsive: Broswer
+4. Right click on the browser page to open the Inspect sidebar and turn on Browser, select responsive:(web or Browser)
 
 ## introduction
 We intend to create a Web Card Game which 
