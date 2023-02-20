@@ -1,0 +1,164 @@
+{
+	"gameName": "My Card Game",
+	"cards": [{
+			"id": 1,
+			"name": "Ace of Hearts",
+			"value": 1,
+			"suit": "hearts",
+			"imageUrl": "https://example.com/cards/ace_of_hearts.png",
+			"description": null
+		},
+		{
+			"id": 2,
+			"name": "Two of Hearts",
+			"value": 2,
+			"suit": "hearts",
+			"imageUrl": "https://example.com/cards/two_of_hearts.png",
+			"description": null
+		},
+		{
+			"id": 3,
+			"name": "Three of Hearts",
+			"value": 3,
+			"suit": "hearts",
+			"imageUrl": "https://example.com/cards/three_of_hearts.png",
+			"description": null
+		},
+		{
+			"id": 4,
+			"name": "Ace of Clubs",
+			"value": 1,
+			"suit": "clubs",
+			"imageUrl": "https://example.com/cards/ace_of_clubs.png",
+			"description": null
+		},
+		{
+			"id": 5,
+			"name": "Two of Clubs",
+			"value": 2,
+			"suit": "clubs",
+			"imageUrl": "https://example.com/cards/two_of_clubs.png",
+			"description": null
+		},
+		{
+			"id": 6,
+			"name": "Three of Clubs",
+			"value": 3,
+			"suit": "clubs",
+			"imageUrl": "https://example.com/cards/three_of_clubs.png",
+			"description": null
+		},
+		{
+			"id": 7,
+			"name": "Ace of Spades",
+			"value": 1,
+			"suit": "spades",
+			"imageUrl": "https://example.com/cards/ace_of_spades.png",
+			"description": null
+		},
+		{
+			"id": 8,
+			"name": "Two of Spades",
+			"value": 2,
+			"suit": "spades",
+			"imageUrl": "https://example.com/cards/two_of_spades.png",
+			"description": null
+		},
+		{
+			"id": 9,
+			"name": "Three of Spades",
+			"value": 3,
+			"suit": "spades",
+			"imageUrl": "https://example.com/cards/three_of_spades.png",
+			"description": null
+		},
+		{
+			"id": 10,
+			"name": "Ace of Diamonds",
+			"value": 1,
+			"suit": "diamonds",
+			"imageUrl": "https://example.com/cards/ace_of_diamonds.png",
+			"description": null
+		},
+		{
+			"id": 11,
+			"name": "Two of Diamonds",
+			"value": 2,
+			"suit": "diamonds",
+			"imageUrl": "https://example.com/cards/two_of_diamonds.png",
+			"description": null
+		},
+		{
+			"id": 12,
+			"name": "Three of Diamonds",
+			"value": 3,
+			"suit": "diamonds",
+			"imageUrl": "https://example.com/cards/three_of_diamonds.png",
+			"description": null
+		},
+		{
+			"id": 13,
+			"name": "Four of Hearts",
+			"value": 4,
+			"suit": "hearts",
+			"imageUrl": "https://example.com/cards/four_of_hearts.png",
+			"description": null
+		},
+		{
+			"id": 14,
+			"name": "Four of Clubs",
+			"value": 4,
+			"suit": "clubs",
+			"imageUrl": "https://example.com/cards/four_of_clubs.png",
+			"description": null
+		},
+		{
+			"id": 15,
+			"name": "Four of Spades",
+			"value": 4,
+			"suit": "spades",
+			"imageUrl": "https://example.com/cards/four_of_spades.png",
+			"description": null
+		},
+		{
+			"id": 16,
+			"name": "Four of Diamonds",
+			"value": 4,
+			"suit": "diamonds",
+			"imageUrl": "https://example.com/cards/four_of_diamonds.png",
+			"description": null
+		},
+		{
+			"id": 17,
+			"name": "Five of Hearts",
+			"value": 5,
+			"suit": "hearts",
+			"imageUrl": "https://example.com/cards/five_of_hearts.png",
+			"description": null
+		},
+		{
+			"id": 18,
+			"name": "Five of Clubs",
+			"value": 5,
+			"suit": "clubs",
+			"imageUrl": "https://example.com/cards/five_of_clubs.png",
+			"description": null
+		},
+		{
+			"id": 19,
+			"name": "Five of Spades",
+			"value": 5,
+			"suit": "spades",
+			"imageUrl": "https://example.com/cards/five_of_spades.png",
+			"description": null
+		},
+		{
+			"id": 20,
+			"name": "Five of Diamonds",
+			"value": 5,
+			"suit": "diamonds",
+			"imageUrl": "https://example.com/cards/five_of_diamonds.png",
+			"description": null
+		}
+	]
+}
