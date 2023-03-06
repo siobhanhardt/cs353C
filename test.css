@@ -1,0 +1,75 @@
+
+.cards {
+    margin: auto;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    z-index: 0;
+}
+
+.card1 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    height: 30vh;
+    width: 20vw;
+    z-index: 1;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+.card2 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    height: 30vh;
+    width: 20vw;
+    z-index: 1;
+    margin-left: 35vw;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+.card3 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    height: 30vh;
+    width: 20vw;
+    z-index: 1;
+    margin-left: 60vw;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+.card4 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    height: 30vh;
+    width: 20vw;
+    z-index: 1;
+    margin-left:22.5vw;
+    margin-top: 40vh;
+    cursor: pointer;
+}
+.card5 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    height: 30vh;
+    width: 20vw;
+    z-index: 1;
+    margin-left:47.5vw;
+    margin-top: 40vh;
+    cursor: pointer;
+}
+.draw {
+    text-align: center;
+    background: red;
+    border: 0px;
+    width: 10vh;
+    height: 10vh;
+    margin-left: 45vw;
+}
+h1 {
+    text-align: center;
+}
