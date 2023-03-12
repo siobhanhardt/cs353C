@@ -1,15 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Login from '../src/login/Login';
+// import '../path/to/antd.css';
 
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+ReactDOM.render(
+    <React.StrictMode>
+        <Login />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-

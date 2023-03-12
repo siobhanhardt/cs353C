@@ -1,0 +1,9 @@
+.login-container {
+    background-image: url("../src/login/pics/officebg.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
