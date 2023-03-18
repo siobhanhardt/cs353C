@@ -1,0 +1,284 @@
+@import "./fonts/font";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  /* 设置滚动条的样式 */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* 滚动槽 */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  /* 滚动条滑块 */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(150, 150, 150, 0.5);
+    box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0.4);
+  }
+  #root {
+    width: 100%;
+    height: 100%;
+    .game {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "AaDingCiShouShu";
+      .rarity_legend {
+        color: #ffd700;
+        .card_rarity {
+          background-color: rgba(255, 215, 0, 0.8);
+        }
+      }
+      .rarity_epic {
+        color: #ff0000;
+        .card_rarity {
+          background-color: rgba(255, 0, 0, 0.8);
+        }
+      }
+      .rarity_elite {
+        color: #800080;
+        .card_rarity {
+          background-color: rgba(128, 0, 128, 0.8);
+        }
+      }
+      .rarity_ordinary {
+        color: #87ceeb;
+        .card_rarity {
+          background-color: rgba(135, 206, 235, 0.8);
+        }
+      }
+      .index_page {
+        .btn_area {
+          .increase_times {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            font-size: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            img {
+              width: 1.8rem;
+              padding-left: 0.5rem;
+            }
+          }
+          button {
+            width: 12rem;
+            height: 4rem;
+            font-size: 2rem;
+            margin: 0 15rem;
+            border-radius: 4px;
+            color: #ffffff;
+            border: 0;
+            outline: 0;
+            font-family: "AaDingCiShouShu";
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s;
+            background-size: 100% 100%;
+            &:hover {
+              outline: 0;
+            }
+            &:active {
+              box-shadow: none;
+            }
+          }
+          .single_btn {
+            background-color: #87ceeb;
+          }
+          .ten_btn {
+            background-color: #ffd700;
+          }
+          .history_btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            color: #fff;
+            text-decoration-line: underline;
+            cursor: pointer;
+          }
+        }
+        .history_area {
+          position: fixed;
+          width: 100%;
+          top: 0;
+          height: 100%;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          padding: 2rem;
+          background-color: rgba(0, 0, 0, 0.8);
+          border-radius: 4px;
+          z-index: 3;
+          .history_list {
+            width: calc(100% - 20rem);
+            position: relative;
+            table {
+              width: 100%;
+              height: 100%;
+              color: #fff;
+              tbody {
+                display: block;
+                height: calc(100% - 2rem);
+                overflow-y: auto;
+              }
+              thead,
+              tbody tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+              }
+              thead {
+                width: calc(100% - 5px);
+              }
+              th {
+                font-size: 2rem;
+              }
+              td {
+                font-size: 1.6rem;
+                text-align: center;
+                text-shadow: 0 0 1px #fff;
+              }
+            }
+          }
+          .history_count {
+            width: 20rem;
+            div {
+              margin-left: 2rem;
+              font-size: 2rem;
+              height: 4rem;
+              line-height: 4rem;
+            }
+            .rarity_total {
+              color: #fff;
+            }
+            button {
+              position: absolute;
+              right: 2rem;
+              bottom: 2rem;
+              border: 0;
+              padding: 0.5rem 1rem;
+              border-radius: 4px;
+              font-family: "AaDingCiShouShu";
+            }
+          }
+        }
+      }
+      .card_main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: inherit;
+        position: absolute;
+        .close_btn {
+          width: 2rem;
+          height: 2rem;
+          position: fixed;
+          top: 2rem;
+          right: 2rem;
+          img {
+            width: 100%;
+          }
+        }
+        .card_area {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          .flip_card {
+            animation: flipCard 1s forwards;
+            img {
+              animation: hideBg 0.5s forwards;
+            }
+          }
+          @keyframes flipCard {
+            0% {
+              transform: rotateY(0);
+            }
+            50% {
+              transform: rotateY(90deg);
+            }
+            100% {
+              transform: rotateY(180deg);
+            }
+          }
+          @keyframes hideBg {
+            90% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+          .card {
+            width: calc(20% - 2rem);
+            height: calc(50% - 1rem);
+            border-radius: 8px;
+            margin: 1rem auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+              position: absolute;
+              top: 0;
+            }
+            .card_face {
+              width: 100%;
+              height: 100%;
+              padding: 0.5rem;
+              transform: rotateY(180deg);
+              background-size: cover;
+              border-radius: 8px;
+              text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+              .card_rarity {
+                font-size: 1rem;
+                float: right;
+                font-weight: bold;
+                color: #fff;
+                padding: 4px 10px;
+                border-radius: 4px;
+              }
+              .card_info {
+                position: absolute;
+                bottom: 1rem;
+                text-align: center;
+                font-weight: 800;
+                left: 0;
+                right: 0;
+                margin: auto;
+                .card_name {
+                  text-shadow: 0 0 10px #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
