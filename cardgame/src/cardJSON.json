@@ -123,7 +123,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/ActAnnoyed.png",
         "type": "Instant",
-        "description": " +3 Recognition for two turns, +20 stress +20 confidence,-10 social skills",
+        "description": " +3 Recognition for two turns, +20 Stress +20 Confidence,-10 Social Skills",
         "flavourText": "Yeah, when you look annoyed all the time, people think that you're busy."
     },
     {
@@ -132,7 +132,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/DuvetDay.png",
         "type": "Instant",
-        "description": "-5 Recognition -40 stress +20 confidence, +10 creativty, +10 social skills",
+        "description": "-5 Recognition -40 Stress +20 Confidence, +10 Creativty, +10 Social Skills",
         "flavourText": "BEEP.BEEP.BEEP.BEEP"
     },
     {
@@ -141,7 +141,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/ForgetMeKnow.png",
         "type": "Instant",
-        "description": "Last card played effects reversed: -20 stress, -10 social skills, 10 confidence",
+        "description": "Last card played effects reversed: -20 Stress, -10 Social Skills, 10 Confidence",
         "flavourText": "Sssshhhh. Shhhhh. There now, its ok go to sleep"
     },
     {
@@ -150,7 +150,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/Voodoo.png",
         "type": "Standard",
-        "description": "-3 Recognition, -all base skills -5, + 5 stress",
+        "description": "-3 Recognition, -5 All Base Skills, + 5 Stress",
         "flavourText": "I can feel something hanging over me, like some dark force that makes me want to not recycle"
     },
     {
@@ -159,7 +159,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/AccidentalNazi.png",
         "type": "Standard",
-        "description": "-5 Recognition, -10 social skills, +10 confidence, +10 work ethic +10 stress",
+        "description": "-5 Recognition, -10 Social Skills, +10 Confidence, +10 Work Ethic +10 Stress",
         "flavourText": "I hear you’re a racist now"
     },
     {
@@ -168,7 +168,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/PanPipeDreams.png",
         "type": "Instant",
-        "description": "-50 stress, -15 work ethic, -10 social skills",
+        "description": "-50 Stress, -15 Work Ethic, -10 Social Skills",
         "flavourText": "The soothing sounds of the Andes-but in the office"
     },
     {
@@ -177,7 +177,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/Elephant.png",
         "type": "Standard",
-        "description": "-3 Recognition for 2 turns,  +10 stress",
+        "description": "-3 Recognition for 2 turns,  +10 Stress",
         "flavourText": "You didn’t get the memo on bring your pet to work"
     },
     {
@@ -186,7 +186,7 @@
         "rarity": 50,
         "imageUrl": "cardImages/WasterDisposal.png",
         "type": "Standard",
-        "description": "-3 Recognition, -10 social skills, -10 confidence",
+        "description": "-3 Recognition, -10 Social Skills, -10 Confidence",
         "flavourText": "Disregard of the companies green policies is a sackable offence"
     },
     {
@@ -209,7 +209,7 @@
     },
     {
         "id": 24,
-        "name": "Caught watching inappropriate content.",
+        "name": "Watching Inappropriate Content.",
         "rarity": 50,
         "imageUrl": "cardImages/InappropriateContent.png",
         "type": "Standard",
@@ -242,6 +242,52 @@
         "type": "Instant",
         "description": "-30 Stress",
         "flavourText": "I don’t know if I laugh or cry, but it’s good to be away from the job for a while…!"
+    },
+    {
+        "id": 28,
+        "name": "Office Gossip",
+        "rarity": 50,
+        "imageUrl": "cardImages/Gossip.png",
+        "type": "Standard",
+        "description": "Lose -10 Recognition, Lose -10 Social Skills, Lose -10 Work Ethic",
+        "flavourText": "I was so happy to find out Stanley was having an affair got to tell everyone! "
+    },
+    {
+        "id": 29,
+        "name": "Brought in your famous chili",
+        "rarity": 50,
+        "imageUrl": "cardImages/Chili.png",
+        "type": "Standard",
+        "description": "Gain +10 Recognition, Gain +10 Social Skills, Lose -5 Stress.",
+        "flavourText": "The trick is to undercook the onions. "
+    },
+    {
+        "id": 30,
+        "name": "Manage yourself",
+        "rarity": 50,
+        "imageUrl": "cardImages/ManageYourself.png",
+        "type": "Standard",
+        "description": "Gain +10 Recognition, Lose -5 Social Skills, Lose -5 Confidence.",
+        "flavourText": "I've been managing my department for several years now and I am not easy to manage"
+    },
+    {
+        "id": 31,
+        "name": "Office Plant Whisperer",
+        "rarity": 50,
+        "imageUrl": "cardImages/Plants.png",
+        "type": "Standard",
+        "description": "Gain +5 Recognition, Gain +5 Work Ethic, Lose -5 Stress",
+        "flavourText": "Who knew all plants needed to survive was water and sunlight"
+    },
+    {
+        "id": 32,
+        "name": "Overtime",
+        "rarity": 50,
+        "imageUrl": "cardImages/OverTime.png",
+        "type": "Standard",
+        "description": "Gain +20 Recognition, Gain +5 Work Ethic, Gain +15 Stress",
+        "flavourText": "Who needs sleep anyway?"
     }
+
     ]
 }

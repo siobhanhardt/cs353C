@@ -6,12 +6,15 @@ let flavour = document.getElementById("flavour");
 let type = document.getElementById("cardtype");
 let image = document.getElementById("cardimage");
 let next = document.getElementById("next");
-let cardNum = 0;
+let cardNum = -1;
 
 next.addEventListener("click", nextCard);
 
 function nextCard() {
     cardNum++;
+    if(cardNum == data.cards.length) {
+        cardNum = 0;
+    }
     title.innerText = data.cards[cardNum].name;
     desc.innerText = data.cards[cardNum].description;
     flavour.innerText = data.cards[cardNum].flavourText;
