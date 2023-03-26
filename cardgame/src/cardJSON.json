@@ -1,0 +1,293 @@
+{ 
+    "gameName": "My Card Game",
+    "cards": [{
+        "id": 1,
+		"name": "The Guy in the 4000$ Suit",
+		"rarity": 10,
+		"imageUrl": "cardImages/4000dollarsuit.png",
+        "type": "Standard",
+		"description": "Gain +4 Recognition per turn, Gain +10 Confidence, Lose -15 Social Skills." ,
+        "flavourText": "Why don’t I just take a whiz through this 5000 dollar suit? COME ON!"
+    },
+    {
+        "id": 2,
+        "name": "Stress Seminar",
+        "rarity": 45,
+        "imageUrl": "cardImages/StressSeminar.png",
+        "type": "Versus",
+        "description": "Stress, if higher -10 Recognition, if lower +10 Recognition. +10 Stress.",
+        "flavourText": "Anyone still experiencing stress by the end of the day will be FIRED!"
+    },
+    {
+        "id": 3,
+        "name": "Phone A Friend",
+        "rarity": 90,
+        "imageUrl": "cardImages/Jen.png",
+        "type": "Skill Check",
+        "description": "If Intelligence > 120, gain +10 Recognition, +5 Stress, +10 Confidence . +10 Social Skills If Intelligence < 120 lose -10 Recognition, -10 Confidence, -10 Social Skills, Gain +15 Stress.",
+        "flavourText": "Anyone still experiencing stress by the end of the day will be FIRED!"
+    },
+    {
+        "id": 4,
+        "name": "Trapped by a Spider",
+        "rarity": 10,
+        "imageUrl": "cardImages/Spider.png",
+        "type": "Standard",
+        "description": "Lose -5 Recognition per turn, -5 Confidence, Gain +20 Stress.",
+        "flavourText": "The Spider has managed to walk behind me, and it’s between me and the door. So I can’t get out"
+    },
+    {
+        "id": 5,
+        "name": "Loud Typing",
+        "rarity": 22,
+        "imageUrl": "cardImages/LoudTyping.png",
+        "type": "Standard",
+        "description": "Lose -2 Recognition per turn, Lose -5 Social Skills, Gain 10+ Stress, +5 Work Ethic.",
+        "flavourText": "Can you stop!"
+    },
+    {
+        "id": 6,
+        "name": "Neuralyzer",
+        "rarity": 22,
+        "imageUrl": "cardImages/Neuralyzer.png",
+        "type": "Instant",
+        "description": "Send Either all of the cards on your side of the field to the graveyard, or send all of the cards on your opponent’s side of the field to the graveyard.",
+        "flavourText": "Wait a minute. You just flash that thing, it erases her memory, and you just make up a new one?"
+    },
+    {
+        "id": 7,
+        "name": "Called in to Work",
+        "rarity": 22,
+        "imageUrl": "cardImages/CalledintoWork.png",
+        "type": "Standard",
+        "description": "Gain +5 Recognition per turn, Gain +15 Work Ethic, +10 Stress, lose -5 Social Skill.",
+        "flavourText": "I’m not even supposed to be here today…"
+    },
+    {
+        "id": 8,
+        "name": "Smoke Break",
+        "rarity": 15,
+        "imageUrl": "cardImages/SmokeBreak.png",
+        "type": "Instant",
+        "description": "Removes -50 Stress",
+        "flavourText": "Jaysus I need a rollie"
+    },
+    {
+        "id": 9,
+        "name": "The Red Door",
+        "rarity": 15,
+        "imageUrl": "cardImages/RedDoor.png",
+        "type": "Standard",
+        "description": "Lose -4 Recognition per turn,  Lose -5 Work Ethic, Gain +10 Creativity.",
+        "flavourText": "What could possibly be behind that damn door, I haven’t slept, I’m up all night thinking about it…"
+    },
+    {
+        "id": 10,
+        "name": "Turned Goth",
+        "rarity": 50,
+        "imageUrl": "cardImages/TurnedGoth.png",
+        "type": "Instant",
+        "description": "Play a card from the graveyard.",
+        "flavourText": "I just found this fresh new band, it’s called Bauhaus."
+    },
+    {
+        "id": 11,
+        "name": "New Boss",
+        "rarity": 50,
+        "imageUrl": "cardImages/NewBoss.png",
+        "type": "Instant",
+        "description": "Removes all Standard cards from the board, they are sent directly to the Graveyard.",
+        "flavourText": "26? And you’re my new boss?"
+    },
+    {
+        "id": 12,
+        "name": "Dating the Manager’s Daughter",
+        "rarity": 50,
+        "imageUrl": "cardImages/ManagerDaughter.png",
+        "type": "Skill Check",
+        "description": "If Confidence > 140, lose -40 Stress. Gain +10 Social Skills. If Confidence < 120 lose -10 Recognition, -15 Confidence, -15 Social Skills, Gain +30 Stress.",
+        "flavourText": "I can explain… oh wait no I can’t."
+    },
+    {
+        "id": 13,
+        "name": "Business VS Card",
+        "rarity": 50,
+        "imageUrl": "cardImages/BusinessCard.png",
+        "type": "Versus",
+        "description": "If Confidence + Social Skills player > opponent, lose -40 Stress. Gain +10 Social Skills. If Confidence + Social Skills < less than opponent lose -10 Recognition, -20 Confidence, -20 Social Skills, Gain +30 Stress.",
+        "flavourText": "Look at that subtle off-white coloring. The tasteful thickness of it. Oh, my God. It even has a watermark."
+    },
+    {
+        "id": 14,
+        "name": "Act Annoyed",
+        "rarity": 50,
+        "imageUrl": "cardImages/ActAnnoyed.png",
+        "type": "Instant",
+        "description": " +3 Recognition for two turns, +20 Stress +20 Confidence,-10 Social Skills",
+        "flavourText": "Yeah, when you look annoyed all the time, people think that you're busy."
+    },
+    {
+        "id": 15,
+        "name": "Duvet Day",
+        "rarity": 50,
+        "imageUrl": "cardImages/DuvetDay.png",
+        "type": "Instant",
+        "description": "-5 Recognition -40 Stress +20 Confidence, +10 Creativty, +10 Social Skills",
+        "flavourText": "BEEP.BEEP.BEEP.BEEP"
+    },
+    {
+        "id": 16,
+        "name": "Forget-Me-Know",
+        "rarity": 50,
+        "imageUrl": "cardImages/ForgetMeKnow.png",
+        "type": "Instant",
+        "description": "Last card played effects reversed: -20 Stress, -10 Social Skills, 10 Confidence",
+        "flavourText": "Sssshhhh. Shhhhh. There now, its ok go to sleep"
+    },
+    {
+        "id": 17,
+        "name": "Voodoo DOLL",
+        "rarity": 50,
+        "imageUrl": "cardImages/Voodoo.png",
+        "type": "Standard",
+        "description": "-3 Recognition, -5 All Base Skills, + 5 Stress",
+        "flavourText": "I can feel something hanging over me, like some dark force that makes me want to not recycle"
+    },
+    {
+        "id": 18,
+        "name": "Accidental Nazi",
+        "rarity": 50,
+        "imageUrl": "cardImages/AccidentalNazi.png",
+        "type": "Standard",
+        "description": "-5 Recognition, -10 Social Skills, +10 Confidence, +10 Work Ethic +10 Stress",
+        "flavourText": "I hear you’re a racist now"
+    },
+    {
+        "id": 19,
+        "name": "Pan Pipe Dreams",
+        "rarity": 50,
+        "imageUrl": "cardImages/PanPipeDreams.png",
+        "type": "Instant",
+        "description": "-50 Stress, -15 Work Ethic, -10 Social Skills",
+        "flavourText": "The soothing sounds of the Andes-but in the office"
+    },
+    {
+        "id": 20,
+        "name": "Elephant in the room",
+        "rarity": 50,
+        "imageUrl": "cardImages/Elephant.png",
+        "type": "Standard",
+        "description": "-3 Recognition for 2 turns,  +10 Stress",
+        "flavourText": "You didn’t get the memo on bring your pet to work"
+    },
+    {
+        "id": 21,
+        "name": "Waste Disposal",
+        "rarity": 50,
+        "imageUrl": "cardImages/WasterDisposal.png",
+        "type": "Standard",
+        "description": "-3 Recognition, -10 Social Skills, -10 Confidence",
+        "flavourText": "Disregard of the companies green policies is a sackable offence"
+    },
+    {
+        "id": 22,
+        "name": "Defamation email got caught.",
+        "rarity": 50,
+        "imageUrl": "cardImages/DefamationEmail.png",
+        "type": "Standard",
+        "description": "Lose -20 Recognition, Gain +20 Stress, Lose -20 Social Skills",
+        "flavourText": "Why did I send that e-mail!"
+    },
+    {
+        "id": 23,
+        "name": "Didn’t save your work",
+        "rarity": 50,
+        "imageUrl": "cardImages/Didntsavework.png",
+        "type": "Standard",
+        "description": "Gain -5 Recognition, Gain -10 Confidence, Gain +20 Stress",
+        "flavourText": "Bollocks, I did that again! My whole day is lost!!!!"
+    },
+    {
+        "id": 24,
+        "name": "Watching Inappropriate Content.",
+        "rarity": 50,
+        "imageUrl": "cardImages/InappropriateContent.png",
+        "type": "Standard",
+        "description": "Lose -25 Recognition, Lose -10 Social Skills, Gain +20 Stress.",
+        "flavourText": "Oh man, I knew it would happen someday!"
+    },
+    {
+        "id": 25,
+        "name": "Hey boss, lunch is on me today!",
+        "rarity": 50,
+        "imageUrl": "cardImages/Lunch.png",
+        "type": "Standard",
+        "description": "Gain +15 Recognition, Gain +10 Social Skills, Lose -10 Stress.",
+        "flavourText": "Better avail that the boss is in a good mood today"
+    },
+    {
+        "id": 26,
+        "name": "All emails are answered!",
+        "rarity": 50,
+        "imageUrl": "cardImages/AllEmailsAnswered.png",
+        "type": "Standard",
+        "description": "Gain +15 Recognition, Gain  +10 Social Skills, Gain +10 Stress.",
+        "flavourText": "Well done! You answered all your emails and are on top of your job!"
+    },
+    {
+        "id": 27,
+        "name": "Sick Leave",
+        "rarity": 50,
+        "imageUrl": "cardImages/SickLeave.png",
+        "type": "Instant",
+        "description": "-30 Stress",
+        "flavourText": "I don’t know if I laugh or cry, but it’s good to be away from the job for a while…!"
+    },
+    {
+        "id": 28,
+        "name": "Office Gossip",
+        "rarity": 50,
+        "imageUrl": "cardImages/Gossip.png",
+        "type": "Standard",
+        "description": "Lose -10 Recognition, Lose -10 Social Skills, Lose -10 Work Ethic",
+        "flavourText": "I was so happy to find out Stanley was having an affair got to tell everyone! "
+    },
+    {
+        "id": 29,
+        "name": "Brought in your famous chili",
+        "rarity": 50,
+        "imageUrl": "cardImages/Chili.png",
+        "type": "Standard",
+        "description": "Gain +10 Recognition, Gain +10 Social Skills, Lose -5 Stress.",
+        "flavourText": "The trick is to undercook the onions. "
+    },
+    {
+        "id": 30,
+        "name": "Manage yourself",
+        "rarity": 50,
+        "imageUrl": "cardImages/ManageYourself.png",
+        "type": "Standard",
+        "description": "Gain +10 Recognition, Lose -5 Social Skills, Lose -5 Confidence.",
+        "flavourText": "I've been managing my department for several years now and I am not easy to manage"
+    },
+    {
+        "id": 31,
+        "name": "Office Plant Whisperer",
+        "rarity": 50,
+        "imageUrl": "cardImages/Plants.png",
+        "type": "Standard",
+        "description": "Gain +5 Recognition, Gain +5 Work Ethic, Lose -5 Stress",
+        "flavourText": "Who knew all plants needed to survive was water and sunlight"
+    },
+    {
+        "id": 32,
+        "name": "Overtime",
+        "rarity": 50,
+        "imageUrl": "cardImages/OverTime.png",
+        "type": "Standard",
+        "description": "Gain +20 Recognition, Gain +5 Work Ethic, Gain +15 Stress",
+        "flavourText": "Who needs sleep anyway?"
+    }
+
+    ]
+}
