@@ -287,6 +287,96 @@
         "type": "Standard",
         "description": "Gain +20 Recognition, Gain +5 Work Ethic, Gain +15 Stress",
         "flavourText": "Who needs sleep anyway?"
+    },
+    {
+        "id": 33,
+        "name": "Parking Space Bandit",
+        "rarity": 50,
+        "imageUrl": "cardImages/ParkingSpace.png",
+        "type": "Standard",
+        "description": "Lose -10 Recognition, Lose -10 Work Ethic, Lose -20 Social Skills",
+        "flavourText": "First come, first served, right?"
+    },
+    {
+        "id": 34,
+        "name": "Water Cooler Epiphanies",
+        "rarity": 50,
+        "imageUrl": "cardImages/WaterCooler.png",
+        "type": "Standard",
+        "description": "Gain +10 Recognition, Lose -5 Stress, Gain +5 Social Skills",
+        "flavourText": "I just had the best idea by the water cooler."
+    },
+    {
+        "id": 35,
+        "name": "Elevator Pitch",
+        "rarity": 50,
+        "imageUrl": "cardImages/ElevatorPitch.png",
+        "type": "Standard",
+        "description": "Gain +20 Recognition, Gain +10 Work Ethic, Gain +20 Social Skills, Gain +5 Stress",
+        "flavourText": "Going up? Let me tell you about my project."
+    },
+    {
+        "id": 36,
+        "name": "PowerPoint Perfection",
+        "rarity": 50,
+        "imageUrl": "cardImages/Presentation.png",
+        "type": "Standard",
+        "description": "Gain +20 Recognition, Gain +5 Work Ethic, Gain +10 Confidence",
+        "flavourText": "My PowerPoint game is strong today."
+    },
+    {
+        "id": 37,
+        "name": "Cubicle Feng Shui",
+        "rarity": 50,
+        "imageUrl": "cardImages/Cubicle.png",
+        "type": "Standard",
+        "description": "Gain +5 Recognition, Gain +5 Work Ethic, Lose -5 Stress",
+        "flavourText": "Who said cubicles can't be Zen?"
+    },
+    {
+        "id": 38,
+        "name": "Print Master",
+        "rarity": 50,
+        "imageUrl": "cardImages/PrintMaster.png",
+        "type": "Standard",
+        "description": "Gain +5 Recognition, Gain +5 Work Ethic, Gain +5 Confidence",
+        "flavourText": "No paper jam stands a chance against me."
+    },
+    {
+        "id": 39,
+        "name": "Office Supply Thief",
+        "rarity": 50,
+        "imageUrl": "cardImages/OfficeThief.png",
+        "type": "Standard",
+        "description": "Lose -20 Recognition, Lose -5 Work Ethic, Lose -10 Social Skills",
+        "flavourText": "Hey, have you seen my stapler?"
+    },
+    {
+        "id": 40,
+        "name": "Microwave Mishap",
+        "rarity": 50,
+        "imageUrl": "cardImages/Microwave.png",
+        "type": "Standard",
+        "description": "Lose -5 Recognition, Gain +10 Stress, Lose -5 Social Skills, Lose -5 Confidence",
+        "flavourText": "So, maybe I shouldn't have microwaved that."
+    },
+    {
+        "id": 41,
+        "name": "Awkward Handshake",
+        "rarity": 50,
+        "imageUrl": "cardImages/AwkwardHandshake.png",
+        "type": "Standard",
+        "description": "Lose -10 Recognition, Lose -10 Confidence, Lose -15 Social Skills",
+        "flavourText": "Do I go for the fist bump or the handshake?"
+    },
+    {
+        "id": 42,
+        "name": "Mass Email Mishap",
+        "rarity": 50,
+        "imageUrl": "cardImages/ReplyAll.png",
+        "type": "Standard",
+        "description": "Lose -20 Recognition, Lose -10 Social Skills, Gain +10 Stress, Lose -5 Work Ethic",
+        "flavourText": "The entire office didn't need to know that."
     }
 
     ]
