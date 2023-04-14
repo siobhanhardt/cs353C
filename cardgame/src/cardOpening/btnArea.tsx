@@ -1,24 +1,27 @@
 import React from 'react';
 
-import History from '../cardOpening/Histroy';
+import History from '../cardOpening/History';
 
-export default class BtnArea extends React.Component {
-    constructor(props) {
+interface BtnAreaProps {
+    getHero: () => void;
+    getHeros: () => void;
+}
+
+export default class BtnArea extends React.Component<BtnAreaProps> {
+    private historyRef = React.createRef<History>();
+
+    state = {
+        times: 0
+    }
+
+    constructor(props: BtnAreaProps) {
         super(props);
-        this.state = {
-            times: 0
-        }
-
-        this.calculationTimes = this.calculationTimes.bind(this) // 方法绑定this的一种解决方案
+        this.calculationTimes = this.calculationTimes.bind(this);
     }
 
-    onRef = (ref) => {
-        this.history = ref
-    }
-
-    calculationTimes (subtractor) { // 抽奖次数的变化
+    calculationTimes(subtractor: number) {
         if (this.state.times < subtractor) {
-            alert('抽奖系数不足');
+            alert('Insufficient lottery coefficient');
             return false;
         } else {
             this.setState({
@@ -28,34 +31,36 @@ export default class BtnArea extends React.Component {
         return true;
     }
 
-    render () { // 页面渲染，子组件History
+    handleGetList = () => {
+        this.historyRef.current?.getList();
+    }
+
+    render() {
         return (
             <div className="index_page">
-            <History onRef={this.onRef} />
-        <div className="btn_area">
-        <div className="increase_times">
-            <span>{this.state.times}</span>
-            <img onClick={() => {
-            this.setState({
-                times: this.state.times + 10
-            })
-        }} src={require('./../../images/add.png')} alt="" />
+                <History ref={this.historyRef} />
+                <div className="btn_area">
+                    <div className="increase_times">
+                        <span>{this.state.times}</span>
+                        <img onClick={() => {
+                            this.setState({
+                                times: this.state.times + 10
+                            })
+                        }} src={require('./../../images/add.png')} alt="" />
+                    </div>
+                    <button className="single_btn" style={{ backgroundImage: `url(${require('./../../images/single.png')})` }} onClick={() => {
+                        if (this.calculationTimes(1)) {
+                            this.props.getHero();
+                        }
+                    }}>Single Draw</button>
+                    <button className="ten_btn" style={{ backgroundImage: `url(${require('./../../images/ten.png')})` }} onClick={() => {
+                        if (this.calculationTimes(10)) {
+                            this.props.getHeros();
+                        }
+                    }}>Ten draws</button>
+                    <div className="history_btn" onClick={this.handleGetList}>Card Record</div>
+                </div>
             </div>
-            <button className="single_btn" style={{ backgroundImage: `url(${require('./../../images/single.png')})` }} onClick={() => {
-            if (this.calculationTimes(1)) {
-                this.props.getHero();
-            }
-        }}>单抽</button>
-        <button className="ten_btn" style={{ backgroundImage: `url(${require('./../../images/ten.png')})` }} onClick={() => {
-            if (this.calculationTimes(10)) {
-                this.props.getHeros();
-            }
-        }}>十连抽</button>
-        <div className="history_btn" onClick={() => {
-            this.history.getList();
-        }}>抽卡记录</div>
-        </div>
-        </div>
-    )
+        )
     }
 }

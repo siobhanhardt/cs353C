@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// collection
+// about the cards
 import './card.scss';
-import CardArea from "../cardOpening/cardArea";
-import BtnArea from "../cardOpening/btnArea"
+import CardArea from './cardArea';
+import BtnArea from './btnArea'
 
 class Game extends React.Component {
-    // collection
-    onRef = (ref) => {
+    cardArea!: CardArea; // Add ! after the class member variable to declare that it must be assigned
+
+    // about the opening
+    onRef = (ref: CardArea) => {
         this.cardArea = ref;
     }
 
-    render () {
+    render() {
         return (
             <div className="game" style={{ backgroundImage: `url(${require('./images/bg.jpg')})` }}>
                 <BtnArea getHeros={ // call CardArea
@@ -24,8 +26,8 @@ class Game extends React.Component {
                         this.cardArea.updateCard(1);
                     }
                 } />
-                <CardArea onRef={this.onRef} />
-            </div >
+                <CardArea ref={this.onRef} />
+            </div>
         );
     }
 }
