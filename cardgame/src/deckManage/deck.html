@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck</title>
+    <link rel="stylesheet" href="deck.css">
+    <link href="https://fonts.cdnfonts.com/css/w95fa" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="window" id="window">
+            <div class="title-bar">
+                <span class="title">Deck</span>
+            </div>
+            <div class="menu-bar">
+                <ul class="menu">
+                    <li>Back</li>
+                    <li>
+                        <select id="sort">
+                            <option value="default">Sort</option>
+                            <option value="nameAsc">A-Z</option>
+                            <option value="nameDesc">Z-A</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select id="filterSelect">
+                            <option value="all">Filter</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Versus">Versus</option>
+                            <option value="Skill Check">Skill Check</option>
+                            <option value="Instant">Instant</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                
+                <div class="card-container" id="card-container">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="arrow-container">
+                    <div class="arrow left" id="leftarrow"></div>
+                    <div class="arrow right" id="rightarrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="deck.js"></script>
+</body>
+</html>
