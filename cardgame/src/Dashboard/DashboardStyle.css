@@ -74,8 +74,9 @@ html {
 }
 
 .button:hover{
-  transform: scale(1.33); /* Adjust the scale value to achieve the desired size */
-  transition: transform 0.2s; /* Optional: adds a smooth transition */
+  width: 8vw;
+  height: 8vw;
+  transition: width 0.2s, height 0.2s; 
 }
 
 .cash {
