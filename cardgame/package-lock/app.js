@@ -1,58 +1,58 @@
 const express = require('express')
 const cors = require('cors');
-// 设置端口号
+// set the port number
 const PORT = process.env.PORT || 9000
 
-// 引入mongodb
+// import mongodb
 const { MongoClient } = require('mongodb')
-// 设置远程数据库名
-const uri = 'mongodb://Tanxiaoxu:651123@ac-nztxvbo-shard-00-00.evsebmk.mongodb.net:27017,ac-nztxvbo-shard-00-01.evsebmk.mongodb.net:27017,ac-nztxvbo-shard-00-02.evsebmk.mongodb.net:27017/test?replicaSet=atlas-wcok94-shard-0&ssl=true&authSource=admin'
+// Set the remote database name
+const uri = 'mongodb://Tanxiaoxu:651123@ac-nztxvbo-shard-00-00.evsebmk.mongodb.net:27017,ac-nztxvbo-shard-00-01.evsebmk.mongodb.net:27017,ac- nztxvbo-shard-00-02.evsebmk.mongodb.net:27017/test?replicaSet=atlas-wcok94-shard-0&ssl=true&authSource=admin'
 
 const client = new MongoClient(uri)
 
 const app = express()
 
-app.use(cors());
+app. use(cors());
 
-// 配置解析表单请求体：application/json
-app.use(express.json())
-// 解析表单请求体：application/x-www-form-urlencoded
-app.use(express.urlencoded())
+// Configuration parsing form request body: application/json
+app. use(express. json())
+// Parse form request body: application/x-www-form-urlencoded
+app. use(express. urlencoded())
 
 
-// 登录用户
-app.post('/login', async (req, res, next) => {
+// login user
+app. post('/login', async (req, res, next) => {
   try {
-    // 1. 获取客户端登录数据
-    const {email, password} = req.body
-    // 2. 数据验证
+    // 1. Get client login data
+    const {email, password} = req. body
+    // 2. Data validation
     if(!email) {
-      return res.send({
+      return res. send({
         code:0,
         error: 'Please enter your email address !'
       })
     } else if (!password) {
-      return res.send({
+      return res. send({
         code:0,
         error: 'Please enter your email address !'
-    })
+      })
     }
-    // 连接数据库
-    await client.connect()
+    // Connect to the database
+    await client. connect()
     const collection = client.db('cs353').collection('user')
-    // 查询所有用户
+    // query all users
     const userList = await collection.find().toArray()
-    // console.log('用户列表', userList)
+    // console.log('User List', userList)
     userList.forEach(item => {
-      if (item.email == email && item.password == password) {
-        res.send({
-          code:1,
-          user:item,
-          message: 'login success !',
+      if (item. email == email && item. password == password) {
+        res. send({
+          code: 1,
+          user: item,
+          message: 'login success!',
         })
       }
     })
-    res.send({
+    res. send({
       message: 'login failed',
       code:0,
     })
@@ -61,17 +61,17 @@ app.post('/login', async (req, res, next) => {
   }
 })
 
-// 查询所有卡片
-app.get('/card',async (req, res, next)=>{
+// query all cards
+app.get('/card', async (req, res, next)=>{
   try {
-    // 连接数据库
-    await client.connect()
+    // Connect to the database
+    await client. connect()
     const collection = client.db('cs353').collection('cardgame')
-    // 查找用户
-    const cardList = await collection.find().toArray();
-    res.send({
-      code:1,
-      cardList:cardList[0].cards
+    // find user
+    const cardList = await collection. find(). toArray();
+    res. send({
+      code: 1,
+      cardList: cardList[0].cards
     })
   } catch (error) {
     next(error)
@@ -79,71 +79,71 @@ app.get('/card',async (req, res, next)=>{
 })
 
 
-app.post('/uploadCard',async (req, res, next) => {
+app.post('/uploadCard', async (req, res, next) => {
   try {
-    // 连接数据库
-    await client.connect()
+    // Connect to the database
+    await client. connect()
     const collection = client.db('cs353').collection('user')
-    // 查找用户
-    const card = await collection.findOne({
+    // find user
+    const card = await collection. findOne({
       email: req.body.email
     })
 
     if(card){
-     const totalArray = card.cards.concat(req.body.cardList || []);
+      const totalArray = card.cards.concat(req.body.cardList || []);
 
-    let incoludArray = [];
+      let incoludArray = [];
 
-    totalArray.forEach(item => {
+      totalArray.forEach(item => {
         if(!incoludArray.includes(item.id)){
           incoludArray.push(item.id)
         }
 
-    })
+      })
 
-    incoludArray = incoludArray.map(item => {
-      return totalArray.find(findItem => findItem.id === item)
-    } )
+      incoludArray = incoludArray. map(item => {
+        return totalArray.find(findItem => findItem.id === item)
+      } )
 
-    await collection.updateOne({email:req.body.email},{$set:{
-      cards:incoludArray
-    }})
-   
-    res.send({
-      code:1,
-      message: 'ok !',
-    })
+      await collection.updateOne({email:req.body.email},{$set:{
+          cards:incoludArray
+        }})
+
+      res. send({
+        code: 1,
+        message: 'ok!',
+      })
 
     }else{
-      res.send({
+      res. send({
         code:0,
         message: 'upadte failed',
       })
     }
-   
+
   } catch (error) {
     next(error)
   }
 })
 
-// 查询用户
+// query users
 app.post('/findDeckCards', async (req, res, next) => {
   try {
-    // 连接数据库
-    await client.connect()
+    // Connect to the database
+    await client. connect()
     const collection = client.db('cs353').collection('user')
-    // 查找用户
-    const card = await collection.findOne({
+    // find user
+    const card = await collection. findOne({
       email: req.body.email
     })
 
     if(card){
-      res.send({
-        code:1,
+      res. send({
+        code: 1,
         cards:card.cards
       })
     }
-    res.send({
+    res. send({
       code:0,
       message: 'find failed',
     })
@@ -155,3 +155,4 @@ app.post('/findDeckCards', async (req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`)
 })
+

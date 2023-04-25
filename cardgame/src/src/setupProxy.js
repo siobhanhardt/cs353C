@@ -1,6 +1,6 @@
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
-// 通常使用这种方式就够了，如果报错，可以使用下面的方法
+// Usually this method is enough, if an error is reported, you can use the following method
 
 module.exports = function (app) {
     app.use(
