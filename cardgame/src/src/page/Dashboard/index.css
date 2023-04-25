@@ -1,0 +1,203 @@
+@import url('https://fonts.cdnfonts.com/css/w95fa');
+
+html {
+  min-width: 1000px;
+}
+
+body {
+  overflow-x: auto;
+}
+
+.WebContainer {
+  width: 90%;
+  height: 90vh;
+  position: relative;
+}
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/DashboardBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: darkgray;
+  z-index: -1;
+}
+
+.image {
+  position: fixed;
+  bottom: -2vw;
+  left: -5vw;
+  width: 110vw;
+  height: 110vh;
+  background-image: url(./img/PC.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+
+.buttons {
+  position: fixed;
+  top: 3vh;
+  right: 3vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  width: 6vw;
+  height: 6vw;
+  margin-bottom: 1vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.button1 {
+  background-image: url(./img/Profile.png);
+}
+
+.button2 {
+  background-image: url(./img/Settings.png);
+}
+
+.button3 {
+  background-image: url(./img/Volume.png);
+}
+
+.button:hover {
+  transform: scale(1.33);
+  transition: transform 0.2s;
+}
+
+
+.cash {
+  position: fixed;
+  top: 3vw;
+  left: 3vw;
+  z-index: 3;
+  color: white;
+  font-family: "W95FA", sans-serif;
+  font-size: 5vw;
+  font-weight: 900;
+  text-shadow: black 4px 4px;
+  user-select: none;
+}
+
+.logo {
+  position: absolute;
+  top: 30.5vh;
+  left: 46vw;
+  z-index: 3;
+  color: white;
+  font-family: "W95FA", sans-serif;
+  font-size: 10.5vw;
+  font-weight: 900;
+  text-shadow: black 10px 10px;
+  transform: translateY(175%);
+  /* Move the text up by 50% of its height */
+
+  user-select: none
+}
+
+.navButtons {
+  position: fixed;
+  top: -1vw;
+  right: 11vw;
+  z-index: 1;
+  padding: 11%;
+  font-family: "W95FA", sans-serif;
+  font-size: 10.5vw;
+  font-weight: 900;
+
+}
+
+
+#shopButton {
+  font-family: "W95FA", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 900;
+  text-shadow: WHITE 1PX 1px;
+  width: 14vw;
+  height: 6w;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.26);
+  border: 2px solid darkgray;
+  margin-bottom: 1.5vw;
+}
+
+#deckButton {
+  font-family: "W95FA", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 900;
+  text-shadow: WHITE 1PX 1px;
+  width: 14vw;
+  height: 6vw;
+
+  border-radius: 2px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.26);
+  border: 2px solid darkgray;
+  margin-top: 1.5vw;
+}
+
+
+
+
+
+.dialogContainer {
+  width: 300px;
+  height: 200px;
+  border: 2px outset white;
+  padding: 8px;
+  background-color: rgb(192, 192, 192);
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 4;
+  font-family: W95FA, sans-serif;
+  font-size: 14px;
+}
+
+.dialogHeader {
+  background-color: rgb(0, 0, 128);
+  color: white;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialogClose {
+  color: black;
+  cursor: pointer;
+  padding: 2px 5px;
+  background-color: rgb(192, 192, 192);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255) rgb(128, 128, 128) rgb(128, 128, 128) rgb(255, 255, 255);
+  border-image: initial;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.dialogFooter {
+  padding: 5px;
+  background-color: white;
+  height: calc(100% - 46px);
+  overflow-y: auto;
+}
