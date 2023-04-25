@@ -12,12 +12,12 @@ export default function Index() {
     const [cardsData,setCardsData] = useState([]);
     
     const navigate =  useNavigate();
-    // 上一页
+    // pre page
     const [prevPage,setPrevPage] = useState(0);
-    // 分页
+    // next page
     const [pageNumber,setPageNumber] = useState(1)
     const [pageSize,setPageSize] = useState(6);
-    // 过滤
+    // fliter
     const [filter,setFilter] = useState(null);
     // sort
     const [sort,setSort] = useState(null); 

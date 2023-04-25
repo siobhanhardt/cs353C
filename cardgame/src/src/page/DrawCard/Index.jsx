@@ -16,7 +16,6 @@ let backEmnu = {
 
 
 
-
 export default function Index() {
    const [cardsData,setCardsData] = useState([]);
     let navigate = useNavigate();
@@ -24,7 +23,7 @@ export default function Index() {
     const [showImg, setShowImg] = useState([])
     let [state, setState] = useState(null);
     window.oncontextmenu = function (e) {
-        //取消默认的浏览器自带右键 很重要！！
+        //It is very important to cancel the default browser's own right button!！
         e.preventDefault();
     }
     useEffect(()=>{
@@ -143,8 +142,6 @@ export default function Index() {
                     }else{
                         navigate('/');
                     }
-
-                  
 
                     
                 }}>REVEAL All</button>
