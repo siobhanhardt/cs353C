@@ -5,16 +5,12 @@ import { useNavigate } from 'react-router-dom'
 
 import api from '../../utils/api'
 
-
-
 let backEmnu = {
     "Instant": '#86c5d5',
     "Skill Check": '#ddc585',
     "Standard": '#86c5d5',
     "Versus": '#be8fd3'
 }
-
-
 
 export default function Index() {
    const [cardsData,setCardsData] = useState([]);
